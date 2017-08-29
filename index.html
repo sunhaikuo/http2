@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .wrap {
+            width: 960px;
+            height: 540px;
+        }
+
+        img {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+
+    </div>
+    <script>
+        var html = []
+        for (var i = 1; i <= 100; i++) {
+            if (i < 10) {
+                html.push('<img width="96px height="54px" src="./images/ground_0' + i + '.jpg">')
+            } else {
+                html.push('<img width="96px height="54px" src="./images/ground_' + i + '.jpg">')
+            }
+
+        }
+        document.getElementById('wrap').innerHTML = html.join('')
+    </script>
+</body>
+
+</html>
