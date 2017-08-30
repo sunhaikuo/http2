@@ -1,4 +1,10 @@
 #！/bin/bash
+
+# 使用方法：
+#   1.wget 'https://raw.githubusercontent.com/sunhaikuo/http2/master/http2.sh'
+#   2.chmod +x http2.sh
+#   3../http2.sh
+#   注：该脚本只能运行在ubuntu系统，其他系统请自行修改命令
 echo "安装依赖库和编译要用到的工具"
 sudo apt-get install build-essential libpcre3 libpcre3-dev zlib1g-dev unzip git
 
